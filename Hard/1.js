@@ -11,9 +11,15 @@
 
 */
 
-const validTriangle = () => {
-    /* Тут код*/
-
+const validTriangle = (a, b, c) => {
+    if (a <= 0 || b <= 0 || c <= 0) {
+        return false //числа не должны быть отрицательными
+    }
+    if (a + b <= c || b + c <= a || a + c <= b) {
+        return false // сумма 2 сторон не должна быть меньше или равной третье стороне
+    }
+    else
+        return true
 }
 
 module.exports = validTriangle

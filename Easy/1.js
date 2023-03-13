@@ -4,8 +4,7 @@
 */
 
 const toSentence = (arr) => {
-    /* Тут код*/
-
+    return arr.join(' ')
 }
-
+console.log(toSentence(['Hello', 'World', '!']))
 module.exports = toSentence
